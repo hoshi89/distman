@@ -10,7 +10,9 @@ all:
 	-I/usr/local/include \
 	-L/usr/lib64 \
 	-L/usr/local/lib \
-	-lzookeeper_mt
+	-lzookeeper_mt \
+	-pedantic \
+	-std=c11
 
 install: all
 	mkdir -p /usr/lib64/distman

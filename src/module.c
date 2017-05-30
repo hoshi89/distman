@@ -1,7 +1,8 @@
 #include <zookeeper/zookeeper.h>
 #include <naemon/naemon.h>
 
-NEB_API_VERSION(CURRENT_NEB_API_VERSION);
+NEB_API_VERSION(CURRENT_NEB_API_VERSION)
+
 nebmodule *neb_handle;
 
 static zhandle_t *zh;

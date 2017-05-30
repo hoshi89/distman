@@ -39,7 +39,8 @@ RUN yum install --assumeyes \
     rubygems \
     gettext-devel \
     flex \
-    vim
+    vim \
+    && yum clean all
 
 RUN yum upgrade --assumeyes && yum clean all
 

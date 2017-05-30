@@ -13,6 +13,7 @@ all:
 	-lzookeeper_mt
 
 install:
+	make all
 	mkdir -p /usr/lib64/distman
 	mkdir -p /usr/etc/distman
 	mkdir -p /usr/etc/naemon/module-conf.d

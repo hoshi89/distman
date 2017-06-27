@@ -3,6 +3,8 @@ all:
 
 	mkdir -p build
 	gcc src/module.c \
+	src/distman.c \
+	src/configuration.c \
 	-shared -o build/distman.so \
 	-fPIC \
 	-I/usr/include/glib-2.0 \
@@ -12,7 +14,8 @@ all:
 	-L/usr/local/lib \
 	-lzookeeper_mt \
 	-pedantic \
-	-std=c11
+	-std=c11 \
+	-D_GNU_SOURCE
 
 install: all
 	mkdir -p /usr/lib64/distman
